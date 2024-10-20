@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+}
+
+input[type="text"],
+input[type="jpg"],
+textarea {
+    width: calc(100% - 20px); /* Учитываем отступы */
+    padding: 10px; 
+    margin-top: 5px; 
+    background-color: #F6F7F9; 
+    border: none; 
+    border-radius: 10px; 
+    display: inline-block
+}
+
+.placeholder{
+    color: #8B8B8B;
+    text-align: left; /* Выравнивание текста плейсхолдера по левому краю */
+}
+
+textarea {
+    height: 100px;
+}
+
+.create-button {
+    background-color: #FEDD2C;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.create-button:hover {
+    background-color: #FEDD2C
+    ;
+}

@@ -1,0 +1,2 @@
+/register-page/check-login&login= - url для проверки определённого логина на существует ли уже такой в базе данных.
+/register-page/create-account - url для создания аккаунта без валидации

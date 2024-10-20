@@ -1,0 +1,70 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    text-align: center;
+}
+
+.round{
+	width: 20px;
+	height: 20px;
+	background: #FEDD2C;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 10px;
+}
+
+.plash{
+    display: flex;
+    align-items: center;
+}
+
+.text{
+    padding: 16px;
+    text-align: center;
+}
+
+.event-title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.queue-container {
+    margin-bottom: 20px;
+}
+
+.queue-item {
+    background-color: white; /* Светло-серый */
+    color: #8B8B8B;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    width: 600px;
+    transition: background-color 0.3s ease;
+}
+
+.queue-item:hover {
+    background-color: #ddd; /* Темнее серый при наведении */
+}
+
+.delete-button {
+    background-color: #FEDD2C; /* Желтый */
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+    background-color: #ffbb00; /* Темнее желтый при наведении */
+}
+

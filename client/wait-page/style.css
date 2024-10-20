@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'TinkoffSans-Regular', sans-serif;
+    src: url('../fonts/tinkoffsans-regular.eot'); /* IE 9 Compatibility Mode */
+    src: url('../fonts/tinkoffsans-regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    url('../fonts/tinkoffsans-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/tinkoffsans-regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    url('../fonts/tinkoffsans-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/tinkoffsans-regular.svg#tinkoffsans-regular') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+
+
+p {
+    font-family: 'TinkoffSans-Regular';
+}

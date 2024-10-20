@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.round{
+	width: 20px;
+	height: 20px;
+	background: #FEDD2C;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 10px;
+}
+
+.plash{
+    display: flex;
+    align-items: center;
+    border: 3px solid #FEDD2C;
+    border-radius: 25px; 
+    display: block;
+    width: 400px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; 
+}
+
+.plus{
+    width: 50px;
+	height: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.name{
+    font-size: 35px;
+}
+.text{
+    padding: 16px;
+    text-align: center;
+}
+.events-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.event {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+.event img {
+    width: 100%;
+    height: auto;
+}
+
+.button {
+    background-color: yellow;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: gold;
+}
+.Stand{
+    position: absolute;
+    top: 0%;
+    left: 27%;
+    text-align: center;
+}
+.button-overlay {
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; 
+}
+.button-overlay button {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+}
+
+.mer1{
+    width: 700px;
+    height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 18px;
+}
+
+.zapicaca {
+    background-color: #FEDD2C;
+    width: 300px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+    text-align: center;
+}
+h2{
+    text-align: center;
+    
+}
+.tx{
+    text-align: center;
+    
+}
