@@ -1,0 +1,38 @@
+import os
+import sys
+
+ROOT_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+SERVER_DIR = ROOT_DIR + "\\server"
+API_DIR = SERVER_DIR + "\\api"
+
+def importModule(path: str):
+    sys.path.insert(0, path)
+
+importModule(API_DIR + "\\adminEventListPage")
+import adminEventList
+
+ADMIN_EVENT_LIST_PAGE = adminEventList.AdminEventListHandler()
+def setAdminEventListPage(SERVER):
+    @SERVER.get(ADMIN_EVENT_LIST_PAGE.indexUrl)
+    async def loadAdminEventListPageIndex():
+        return ADMIN_EVENT_LIST_PAGE.loadIndex()
+
+    @SERVER.get(ADMIN_EVENT_LIST_PAGE.scriptUrl)
+    async def loadAdminEventListPageScript():
+        return ADMIN_EVENT_LIST_PAGE.loadScript()
+
+    @SERVER.get(ADMIN_EVENT_LIST_PAGE.pictureUrl)
+    async def loadAdminEventListPagePicture():
+        return ADMIN_EVENT_LIST_PAGE.loadPicture()
+
+    @SERVER.get(ADMIN_EVENT_LIST_PAGE.styleUrl)
+    async def loadAdminEventListPageStyle():
+        return ADMIN_EVENT_LIST_PAGE.loadStyle()
+
+    @SERVER.get(ADMIN_EVENT_LIST_PAGE.plusUrl)
+    async def loadAdminEventListPagePlus():
+        return ADMIN_EVENT_LIST_PAGE.loadPlus()
+
+    @SERVER.get(ADMIN_EVENT_LIST_PAGE.getUserEventListUrl)
+    async def getUserEventList():
+        return ADMIN_EVENT_LIST_PAGE.getUserEventList()

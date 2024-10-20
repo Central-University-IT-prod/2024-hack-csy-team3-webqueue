@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новое мероприятие</title>
+    <link rel="stylesheet" href="/admin-create-events-page/style.css">
+    <style>body {
+        font-family: Arial, sans-serif;
+        background-color: #F5F5F5;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background: white;
+        border-radius: 5px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    
+    h1 {
+        text-align: center;
+    }
+    
+    label {
+        margin-top: 10px;
+        display: block;
+    }
+    
+    input[type="text"],
+    input[type="jpg"],
+    textarea {
+        width: calc(100% - 20px); /* Учитываем отступы */
+        padding: 10px; 
+        margin-top: 5px; 
+        background-color: #F6F7F9; 
+        border: none; 
+        border-radius: 10px; 
+        display: inline-block
+    }
+    
+    .placeholder{
+        color: #8B8B8B;
+        text-align: left; /* Выравнивание текста плейсхолдера по левому краю */
+    }
+    
+    textarea {
+        height: 100px;
+    }
+    
+    .create-button {
+        background-color: #FEDD2C;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        width: 100%;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+    
+    .create-button:hover {
+        background-color: #FEDD2C;
+    }</style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Новое мероприятие</h1>
+        <form id="eventForm">
+            <input type="text" id="eventName" class="input-field" placeholder="Название мероприятия" required>
+            <input type="text" id="description" class="input-field" placeholder="Описание мероприятия" required>
+            <input type="text" id="avgTimeOnOnePerson" class="input-field" placeholder="Длительность мероприятия(мин.)" required>
+            <button type="submit" id="createButton" class="create-button">Создать мероприятие</button>
+        </form>
+    </div>
+    <script src="/admin-create-events-page/script.js"></script>
+</body>
+</html>

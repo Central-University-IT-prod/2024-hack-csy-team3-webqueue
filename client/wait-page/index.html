@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title1">Y</title>
+    <link rel="stylesheet" href="/wait-page/style.css">
+</head>
+
+<body>
+    <style>
+
+        body {
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        .container {
+            background-color: #f5f5f5;
+            border-color: #FEDD2C;
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content:;
+        }
+        .container1 {
+            background-color: #f5f5f5;
+            border: 1px solid #FEDD2C;
+            padding: 20px;
+            border-radius: 10px;
+            width: 85%;
+            max-width: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content:;
+        }
+        .container12 {
+            background-color: #ffffff;
+            border: 1px solid #FEDD2C;
+            padding: 20px;
+            border-radius: 20px;
+            width: 90%;
+            max-width: 350px;
+            display: flex;
+            flex-direction: column;
+            
+            justify-content:;
+        }
+        .container2 {
+            background-color: #ffffff;
+            
+            padding: 20px;
+            border-radius: 20px;
+            width: 85%;
+            max-width: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content:;
+        }
+        .container3 {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 20px;
+            width: 50%;
+            max-width: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content:;
+        }
+
+        .image-placeholder {
+            width: 100%;
+            height: 100px; /* Примерная высота картинки */
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px; /* Увеличено расстояние между полями */
+            border: none;
+            border-radius: 10px;
+            background-color: #f6f7f9;
+            color: #8B8B8B;
+            font-size: 16px;
+            text-align: left; /* Выравнивание текста по левому краю */
+        }
+
+            input::placeholder {
+                color: #8B8B8B;
+                text-align: left; /* Выравнивание текста плейсхолдера по левому краю */
+            }
+
+        .cancel-button {
+            border: none;
+            background-color: #FFFFFF;
+            padding: 12px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: regular;
+            cursor: pointer;
+            width: 100%;
+            text-align: center; /* Выравнивание текста по центру */
+            transition: background-color 0.3s;
+        }
+
+            .cancel-button:hover {
+                background-color: #FEDD2C
+            }
+
+        .button1 {
+            background-color: #8B8B8B;
+            color: black;
+            padding: 12px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: regular;
+            cursor: pointer;
+            width: 100%;
+            text-align: center; /* Выравнивание текста по центру */
+        }
+    </style>
+    
+    <div class="container">
+        <big><h2 align="center" id="eventName" ">x</h2></big>
+
+        <div class="container1">
+            <p align="center" style="font-size:30px"><b>Запись прошла успешно!</b></p>
+        </div>
+        <br />
+        <div class="container2">
+            <div class="container12"><p align="center" style="font-size:20px">Текущее положение в очереди:</p></div>
+            <p align="center"  style="font-size: 35px; color:#4e90ef" id="placeInQueue" >x</p>
+            <div class="container12"><p align="center" style="font-size:20px"><img src=/wait-page/clock.png /> Время ожидания: </p></div>
+            <p align="center" style="font-size: 35px; color: #4e90ef" id="timeToWait">x</p>
+        </div>
+
+        <div class="container3">
+            <button class="cancel-button" id="cancel-button">Выйти из очереди</button>
+            <p class="aligncenter">  </p>
+         </div>
+
+            <img src=/wait-page/logotip.png width="100">
+        <style>
+            .aligncenter {
+                text-align: center;
+            }
+        </style>
+
+        <script src="/wait-page/script.js"></script>
+    </div>
+</body>
+</html>
